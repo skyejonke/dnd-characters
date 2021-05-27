@@ -32,11 +32,11 @@
 
 % Ability scores
 \StrengthScore{12}
-\DexterityScore{14 + 2}
+\DexterityScore{16} % + 2 tabaxi
 \ConstitutionScore{13}
 \IntelligenceScore{14}
 \WisdomScore{15}
-\CharismaScore{11 + 1}
+\CharismaScore{12} % + 1 tabaxi
 
 % Ability modifiers
 \StrengthModifier{+1}
@@ -48,11 +48,11 @@
 
 % Saving Throws
 \StrengthSavingThrowModifier{+1}
-\DexteritySavingThrowModifier{0}
-\ConstitutionSavingThrowModifier{+5}
-\IntelligenceSavingThrowModifier{+2}
-\WisdomSavingThrowModifier{+2}
-\CharismaSavingThrowModifier{+6}
+\DexteritySavingThrowModifier{+3}
+\ConstitutionSavingThrowModifier{+1}
+\IntelligenceSavingThrowModifier{+4} % Prof
+\WisdomSavingThrowModifier{+4} % Prof
+\CharismaSavingThrowModifier{+1}
 
 \AcrobaticsSkillModifier{0}
 \AnimalHandlingSkillModifier{+2}
@@ -73,44 +73,44 @@
 \StealthSkillModifier{0}
 \SurvivalSkillModifier{+2}
 
-% Prociciencies
+% Proficiencies
 \StrengthProficiency{}
 \DexterityProficiency{}
-\ConstitutionProficiency{True} % Sorcerer
+\ConstitutionProficiency{}
 \IntelligenceProficiency{}
 \WisdomProficiency{}
-\CharismaProficiency{True} % Sorcerer
+\CharismaProficiency{}
 
 \AcrobaticsProficiency{}
-\AnimalHandlingProficiency{}
-\ArcanaProficiency{True} % Sorcerer
+\AnimalHandlingProficiency{True} % Druid
+\ArcanaProficiency{}
 \AthleticsProficiency{}
 \DeceptionProficiency{}
-\HistoryProficiency{True} % Noble
-\InsightProficiency{True} % Sorcerer
+\HistoryProficiency{}
+\InsightProficiency{}
 \IntimidationProficiency{}
 \InvestigationProficiency{}
 \MedicineProficiency{}
-\NatureProficiency{}
-\PerceptionProficiency{}
+\NatureProficiency{True} % Druid
+\PerceptionProficiency{True} % Tabaxi
 \PerformanceProficiency{}
-\PersuasionProficiency{True} % Noble
+\PersuasionProficiency{}
 \ReligionProficiency{}
 \SleightOfHandProficiency{}
-\StealthProficiency{}
+\StealthProficiency{True} % Tabaxi
 
 \Inspiration{}
-\Proficiency{+4}
+\Proficiency{+2}
 \Perception{17} %+5 Observant
 
 \ArmorClass{13}
 \Initiative{0}
 \Speed{30ft}
-\MaxHitPoints{76}
-\CurrentHitPoints{76}
+\MaxHitPoints{9}
+\CurrentHitPoints{9}
 \TemporaryHitPoints{}
-\MaxHitDice{11d6}
-\CurrentHitDice{11d6}
+\MaxHitDice{1d8}
+\CurrentHitDice{1d8}
 
 \CP{}
 \SP{}
@@ -119,9 +119,7 @@
 \PP{}
 
 
-\AddWeapon{Dagger}{+5}{1d4+1 p}
-\AddWeapon{Light Crossbow}{+4}{1d8 p}
-\AddWeapon{Stiletto Dagger}{+5}{1d3 p}
+\AddWeapon{Scimitar}{+1}{1d6 s}
 
 \AttacksAdditional{
 \textbf{Arcane Focus:}\\A glass orb filled with moving smoke, known as Dagmar\\
@@ -130,118 +128,86 @@
 }
 
 \OtherProficienciesLanguages{
-\textbf{Languages:}\\Common, Draconic, Undercommon, Celestial\\
-\textbf{Armor:}\\None\\
-\textbf{Weapons:}\\Daggers, darts, slings, quarterstaffs, light crossbows\\
-\textbf{Tools:}\\Jeweller's tools
+\textbf{Languages:}\\Common, Druidic, + 1\\
+\textbf{Armor:}\\Light Armor, Medium Armor\\
+\textbf{Weapons:}\\Clubs, Daggers, Darts, Javelins, Maces, Quarterstaff,
+Scimitars, Sickles, Slings, Spears\\
+\textbf{Tools:}\\Herbalism  tools
 }
 
 \Equipment{
-20 crossbow bolts,
-a backpack,
-a bedrool,
-a mess kit,
-a tinderbox,
-10 torches,
-10 days of rations,
-a waterskin,
-50 ft hempen rope,
-Jeweller's tools,
-Gilbmarrow's map of Northern Gulala
+  Leather Armor,
+  Explorer's Pack,
+  Wooden Shield OR Simple Weapon,
+  Druidic Focus
 }
 
 \PersonalityTraits{
-I have a very dry personality, and seem unbothered by anything which I can't see the funny side of. Deep down I am very loyal to the people I am close to, but although I appear aloof, I am rooting for them
 }
 
 \Ideals{
-There's no good pretending to be something that I'm not
 }
 
 \Bonds{
-I have a strong bond with my family, but they don't have one with me, I want to uncover my sorcerous origins so that I can reconnect with them
 }
 
 \Flaws{
-My noble upbringing and demeanour makes it hard for me to connect with people, and I appear disconnected from the world
 }
 
 \FeaturesTraits{
-\textbf{Font of Magic}
+\textbf{Tabaxi}
 \begin{itemize}
-  \item Sorcery Points (11)
-  \item Flexible Casting
+  \item Darkvision
+  \item Feline Agility
+  \item Cat's Claws
 \end{itemize}
-\textbf{Metamagic}
+\textbf{Druid}
 \begin{itemize}
-  \item Heightened Spell
-  \item Twinned Spell
-  \item Quickened Spell
-\end{itemize}
-\textbf{Draconic Bloodline}
-\begin{itemize}
-  \item Dragon Ancestor
-  \item Draconic Resilience
-  \item Elemental Affinity
-\end{itemize}
-\textbf{Noble}
-\begin{itemize}
-  \item Position of Privilege
-\end{itemize}
-\textbf{Feats}
-\begin{itemize}
-  \item Observant
-  \item Spell Sniper
-\end{itemize}
-\textbf{Magical Items}
-\begin{itemize}
-  \item Ring of Mind Shielding
-  \item Wand of Web (7)
-  \item Stiletto Dagger
-  \item Ring of Fire Resistance (loaned)
+  \item Spell Casting
+  \item Ritual Casting
 \end{itemize}
 }
 
 
 % Magic
 
-\SpellcastingClass{Sorcerer}
-\SpellcastingAbility{CHA}
-\SpellSaveDC{15}
-\SpellAttackBonus{+7}
+\SpellcastingClass{Druid}
+\SpellcastingAbility{WIS}
+\SpellSaveDC{12}
+\SpellAttackBonus{+4}
 
-\CantripSlotA{Chill Touch (V, S)}
-\CantripSlotB{Eldrich Blast (V, S) (Spell Sniper)}
-\CantripSlotC{Light (V, M)}
-\CantripSlotD{Mage Hand (V, S)}
-\CantripSlotE{Message (V, S, M)}
-\CantripSlotF{Mending (V, S, M)}
-\CantripSlotG{Ray of Frost (V, S)}
+\CantripSlotA{Druidcraft (V, S)}
+\CantripSlotB{Shillelagh (V, S, M)}
+\CantripSlotC{}
+\CantripSlotD{}
+\CantripSlotE{}
+\CantripSlotF{}
+\CantripSlotG{}
 
-\FirstLevelSpellSlotsTotal{4}
-\FirstLevelSpellSlotA{False Life (V, S, M)}
-\FirstLevelSpellSlotB{Magic Missile (V, S)}
+\FirstLevelSpellSlotsTotal{2}
+\FirstLevelSpellSlotA{}
+\FirstLevelSpellSlotB{}
 
-\SecondLevelSpellSlotsTotal{3}
-\SecondLevelSpellSlotA{Misty Step (V)}
-\SecondLevelSpellSlotB{Scorching Ray (V, S)}
-\SecondLevelSpellSlotC{Web (V, S, M (Wand of Web)}
+\SecondLevelSpellSlotsTotal{}
+\SecondLevelSpellSlotA{}
+\SecondLevelSpellSlotB{}
+\SecondLevelSpellSlotC{}
 
-\ThirdLevelSpellSlotsTotal{3}
-\ThirdLevelSpellSlotA{Lighting Bolt (V, S, M)}
+\ThirdLevelSpellSlotsTotal{}
+\ThirdLevelSpellSlotA{}
 
-\FourthLevelSpellSlotsTotal{3}
-\FourthLevelSpellSlotA{Blight (V, S)}
-\FourthLevelSpellSlotB{Dominate Beast (V, S)}
-\FourthLevelSpellSlotC{Greater Invisibility (V, S)}
-\FourthLevelSpellSlotD{Ice Storm (V, S, M)}
+\FourthLevelSpellSlotsTotal{}
+\FourthLevelSpellSlotA{}
+\FourthLevelSpellSlotB{}
+\FourthLevelSpellSlotC{}
+\FourthLevelSpellSlotD{}
 
-\FifthLevelSpellSlotsTotal{2}
-\FifthLevelSpellSlotA{Telekinesis (V, S)}
+\FifthLevelSpellSlotsTotal{}
+\FifthLevelSpellSlotA{}
 
-\SixthLevelSpellSlotsTotal{1}
-\SixthLevelSpellSlotA{Investiture of Ice (V, S)}
-\SixthLevelSpellSlotB{Chain Lightning (V, S, M)}
+\SixthLevelSpellSlotsTotal{}
+\SixthLevelSpellSlotA{}
+\SixthLevelSpellSlotB{}
 
 \begin{document}
 \newgeometry{left=0cm,right=0cm,top=0cm,bottom=0cm}

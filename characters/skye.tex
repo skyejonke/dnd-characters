@@ -10,16 +10,17 @@
 \input{../character-sheet-settings}
 \input{../template/character-sheet-commands}
 
+\newcommand{\name}{NAME}
 
 
 % Headline
-\CharacterName{Unnamed Silver Orb}
+\CharacterName{\name}
 
 \Class{Druid 1}
-\Background{Noble}
+\Background{Sage}
 \PlayerName{Skye}
 \Race{Tabaxi}
-\Alignment{Neutral Good}
+\Alignment{Chaotic Neutral}
 \XP{0}
 
 % Dice rolls
@@ -54,39 +55,39 @@
 \WisdomSavingThrowModifier{+4} % Prof
 \CharismaSavingThrowModifier{+1}
 
-\AcrobaticsSkillModifier{0}
-\AnimalHandlingSkillModifier{+2}
-\ArcanaSkillModifier{+6}
+\AcrobaticsSkillModifier{+3}
+\AnimalHandlingSkillModifier{+4}
+\ArcanaSkillModifier{+2}
 \AthleticsSkillModifier{+1}
-\DeceptionSkillModifier{+3}
-\HistorySkillModifier{+6}
-\InsightSkillModifier{+6}
-\IntimidationSkillModifier{+3}
-\InvestigationSkillModifier{+7} % +5 Observant
+\DeceptionSkillModifier{+1}
+\HistorySkillModifier{+2}
+\InsightSkillModifier{+2}
+\IntimidationSkillModifier{+1}
+\InvestigationSkillModifier{+2}
 \MedicineSkillModifier{+2}
-\NatureSkillModifier{+2}
-\PerceptionSkillModifier{+7} % +5 Observant
-\PerformanceSkillModifier{+3}
-\PersuasionSkillModifier{+7} 
+\NatureSkillModifier{+4}
+\PerceptionSkillModifier{+4}
+\PerformanceSkillModifier{+1}
+\PersuasionSkillModifier{+1}
 \ReligionSkillModifier{+2}
-\SleightOfHandSkillModifier{0}
-\StealthSkillModifier{0}
+\SleightOfHandSkillModifier{+3}
+\StealthSkillModifier{+3}
 \SurvivalSkillModifier{+2}
 
 % Proficiencies
 \StrengthProficiency{}
 \DexterityProficiency{}
 \ConstitutionProficiency{}
-\IntelligenceProficiency{}
-\WisdomProficiency{}
+\IntelligenceProficiency{True}
+\WisdomProficiency{True}
 \CharismaProficiency{}
 
 \AcrobaticsProficiency{}
 \AnimalHandlingProficiency{True} % Druid
-\ArcanaProficiency{}
+\ArcanaProficiency{True} % Sage
 \AthleticsProficiency{}
 \DeceptionProficiency{}
-\HistoryProficiency{}
+\HistoryProficiency{True} % Sage
 \InsightProficiency{}
 \IntimidationProficiency{}
 \InvestigationProficiency{}
@@ -114,21 +115,21 @@
 
 \CP{}
 \SP{}
-\GP{}
+\GP{10}
 \EP{}
 \PP{}
 
 
-\AddWeapon{Scimitar}{+1}{1d6 s}
+\AddWeapon{Scimitar}{+5}{1d6 + 3 s}
+\AddWeapon{Dart (range 20/60)}{+5}{1d4 +5 p}
 
 \AttacksAdditional{
-\textbf{Arcane Focus:}\\A glass orb filled with moving smoke, known as Dagmar\\
-\textbf{Stiletto Dagger:}\\Advantage on stealth checks to conceal\\
-\textbf{Resistances:}\\Ice and Fire damage\\
+  \textbf{Druidic Focus:}\\A wand made from a branch of a small tree \name
+  nurtured since childhood.\\
 }
 
 \OtherProficienciesLanguages{
-\textbf{Languages:}\\Common, Druidic, + 1\\
+\textbf{Languages:}\\Common, Druidic, Sylvan\\
 \textbf{Armor:}\\Light Armor, Medium Armor\\
 \textbf{Weapons:}\\Clubs, Daggers, Darts, Javelins, Maces, Quarterstaff,
 Scimitars, Sickles, Slings, Spears\\
@@ -138,12 +139,19 @@ Scimitars, Sickles, Slings, Spears\\
 \Equipment{
   Leather Armor,
   Explorer's Pack,
-  Wooden Shield OR Simple Weapon,
-  Druidic Focus
+  Darts,
+  Druidic Focus,
+  A bottle of black ink,
+  A quill,
+  A small knife,
+  Letter from a dead colleague,
+  Common Clothes
 }
 
 \PersonalityTraits{
-  Nerd
+  \begin{itemize}
+    \item Shy
+  \end{itemize}
 }
 
 \Ideals{
@@ -169,6 +177,10 @@ Scimitars, Sickles, Slings, Spears\\
 \begin{itemize}
   \item Spell Casting
   \item Ritual Casting
+\end{itemize}
+\textbf{Sage}
+\begin{itemize}
+        \item Researcher
 \end{itemize}
 }
 
@@ -204,6 +216,14 @@ Scimitars, Sickles, Slings, Spears\\
 \twocolumn
 
 \chapter*{Features, Magic Items and Spells}
+
+\section*{Tabaxi}
+\subsection{Feline Agility}
+Your reflexes and agility allow you to
+move with a burst of speed. When you move on your
+tum in combat, you can double your speed until the end
+of the tum. Once you use this trait, you can't use it again
+until you move O feet on one of your turns.
 
 \section*{Sorcerer}
 \subsection*{Font of Magic}
